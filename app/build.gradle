@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -45,17 +44,23 @@ android {
         //glide
         implementation 'com.github.bumptech.glide:glide:4.7.1'
         annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
-        implementation 'com.github.bumptech.glide:okhttp3-integration:4.7.1' // glide use okhttps download
+        implementation 'com.github.bumptech.glide:okhttp3-integration:4.7.1'
+        // glide use okhttps download
         implementation 'jp.wasabeef:glide-transformations:3.3.0'
         //implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1' // If you want to use the GPU Filters
 
         //iconify
-        implementation (name: 'iconify-debug', ext: 'aar')
-        implementation (name: 'iconify-fontawesome-debug', ext: 'aar')
+        implementation(name: 'iconify-debug', ext: 'aar')
+        implementation(name: 'iconify-fontawesome-debug', ext: 'aar')
 
         //Ask perm
         implementation 'com.github.florent37:runtime-permission:1.0.1'
         compile 'com.payelves:sdk-release:3.3.9'
+        compile 'com.umeng.umsdk:analytics:7.5.4'
+        compile 'com.umeng.umsdk:common:1.5.4'
     }
 }
 
+dependencies {
+    implementation files('libs/SocialSDK_Sina_Simplify.jar')
+}

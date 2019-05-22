@@ -117,6 +117,7 @@ public class VideoSearchFragment extends Fragment {
     @OnClick(R.id.video_search_btn_enter)
     public void onSearch()
     {
+        System.out.println("点击下载==============");
         String str = editor.getText().toString();
         if (str.isEmpty() || !Validator.containsUrl(str))
         {
