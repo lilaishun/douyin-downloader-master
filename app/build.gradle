@@ -55,7 +55,7 @@ android {
 
         //Ask perm
         implementation 'com.github.florent37:runtime-permission:1.0.1'
-
+        compile 'com.payelves:sdk-release:3.3.9'
     }
 }
 
